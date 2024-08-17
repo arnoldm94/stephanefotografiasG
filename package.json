@@ -1,0 +1,26 @@
+{
+  "name": "webstephanefotografias",
+  "version": "1.0.0",
+  "main": "./js/index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon ./js/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnoldm94/web-stephane-fotografias.git"
+  },
+  "author": "Arnold Melet",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arnoldm94/web-stephane-fotografias/issues"
+  },
+  "homepage": "https://github.com/arnoldm94/web-stephane-fotografias#readme",
+  "description": "",
+  "dependencies": {
+    "photoswipe": "^5.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <script src="./js/index.js" defer></script>
+    <link rel="stylesheet" href="../node_modules/photoswipe/src/photoswipe.css" />
+    <link rel="stylesheet" href="../css/styles.css" />
+
+    <title>Stephane fotografias - Fotografa</title>
+  </head>
+  <body>
+    <main>
+      <!--  Nav-Bar -->
+      <nav id="navbarSteph" class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="./index.html">
+            <img
+              id="logosteph"
+              class="d-inline-flex p-2"
+              src="./img/logopeq_stephanefotografias.PNG"
+              alt="logo de Stephanefotografias"
+            />
+            <h1 class="d-inline-flex p-2">Stephane Fotografias</h1>
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item pe-3">
+                <a id="homeclick" class="nav-link active" aria-current="page" href="./index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item pe-3">
+                <a id="aboutmeclick" class="nav-link" href="./index.html#titleaboutme">About Me</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="./pages/services.html">Services</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="./pages/gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item pe-3">
+                <a class="nav-link" href="./pages/contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- INICIO DE PAGINA -->
+      <section>
+        <div id="home">
+          <div class="FotosdeHome">
+            <img
+              class="mySlides w3-animate-fading"
+              src="./img/home/img1_recortada.JPG"
+              style="height: 100%"
+            />
+            <img
+              class="mySlides w3-animate-fading"
+              src="./img/home/img2_recortada.JPG"
+              style="height: 100%"
+            />
+            <img
+              class="mySlides w3-animate-fading"
+              src="./img/home/img3_recortada.JPG"
+              style="width: 100%"
+            />
+          </div>
+
+          <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              myIndex++;
+              if (myIndex > x.length) {
+                myIndex = 1;
+              }
+              x[myIndex - 1].style.display = "block";
+              setTimeout(carousel, 5000);
+            }
+          </script>
+        </div>
+      </section>
+
+      <!--About Me -->
+      <section id="aboutmesection">
+        <div class="titleaboutme"><h1 id="titleaboutme">¡Hola! soy Stephane</h1></div>
+        <div id="aboutme">
+          <div class="aboutmeimg">
+            <img
+              id="img_aboutme"
+              src="./img/home/aboutmeimg.JPG"
+              alt="imagen de fotografa Stephane"
+            />
+          </div>
+          <div class="paragraohaboutme">
+            <h5 class="cuadrodetextoaboutme">
+              <p>
+                Mi primer contacto con una cámara profesional ha sido en el bachillerato, tenía
+                clases de cinema y me encantó. Después de eso, conocí un fotoperiodista que me llevó
+                a fotografiar en conciertos y manifestaciones con su cámara. En el bachillerato
+                también hice excursiones para productoras de televisión, y me apasionaba ver como
+                todo funcionaba.
+              </p>
+              <br />
+              <p>
+                Lo que mas me encantaba hacer era buscar belleza en las calles de São Paulo, jugando
+                con luces y creando mi propio proyecto, pensando que algún día podría exponer en
+                galerías de arte. Incluso participé de otro curso de fotografía artística para
+                continuar con mis proyectos.
+              </p>
+              <br />
+              <p>
+                En 2023 me inscribí a un curso de “Visual Merchandising” para estimular mi
+                creatividad. Ha sido una sorpresa, pero de las buenas, porque me dio la oportunidad
+                de pensar de nuevo en mi proyecto inicial de trabajar con fotografía. Escribí un
+                esbozo de mi plan de negocio, pero con un enfoque principal en la fotografía de
+                familia, porque al final es un área que me enamora por mis valores y por la
+                posibilidad de conectar, conocer la historia de las personas y mostrar la belleza de
+                estos momentos. Conforme los clientes llegaban empece a plantearme tener un estudio
+                para poder atenderles mejor, ser más profesional.
+              </p>
+              <br />
+              <p>
+                Quiero estar involucrada en la parte de creación de piezas de marketing de todo
+                tipo. A parte de eso, también me gusta hacer videos documentales contando historias
+                de personas o acontecimientos importantes, de exposiciones.
+              </p>
+            </h5>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria -->
+      <section id="services">
+        <div id="servicesline">
+          <!--separar en grupos de 3 -->
+          <container class="servicesbox hiddenphone">
+            <div class="servicesbox_img">
+              <a href="./pages/german&tatiana/german&tatiana.html"><img src="./img/home/servicios1.jpg" alt="" /></a>
+            </div>
+            <div class="servicesbox_title"><h3>German & Tatiana</h3></div>
+            <div class="servicesbox_body">
+              <h6>18.05</h6>
+            </div>
+          </container>
+
+          <container class="servicesbox hiddenphone">
+            <div class="servicesbox_img">
+              <a href="./pages/adriana&julio/adriana&julio.html"><img src="./img/home/servicios2.JPG" alt="" /></a>
+            </div>
+            <div class="servicesbox_title"><h3>Adriana & Julio</h3></div>
+            <div class="servicesbox_body">
+              <h6>22.07</h6>
+            </div>
+          </container>
+
+          <container class="servicesbox hiddenphone">
+            <div class="servicesbox_img">
+              <a href="./pages/samira&karim/samira&karim.html"><img src="./img/home/servicios3.JPG" alt="" /></a>
+            </div>
+            <div class="servicesbox_title"><h3>Samira & Karim</h3></div>
+            <div class="servicesbox_body">
+              <h6>27.01</h6>
+            </div>
+          </container>
+        </div>
+<p id="spacephone"></p>
+        <div  class="hiddendesktop servicesline">
+          <!--solo movil -->
+          <container class="servicesbox hiddendesktop">
+            <div class="servicesbox_img">
+              <a href="./pages/german&tatiana/german&tatiana.html"><img src="./img/home/servicios1.jpg" alt="" /></a>
+            </div>
+            <div class="servicesbox_title"><h3>German & Tatiana</h3></div>
+            <div class="servicesbox_body">
+              <h6>18.05</h6>
+            </div>
+          </container>
+        </div>
+
+        <div  class="hiddendesktop servicesline">
+          <container class="servicesbox hiddendesktop">
+            <div class="servicesbox_img">
+              <a href="./pages/adriana&julio/adriana&julio.html"><img src="./img/home/servicios2.JPG" alt="" /></a>
+            </div>
+            <div class="servicesbox_title"><h3>Adriana & Julio</h3></div>
+            <div class="servicesbox_body">
+              <h6>22.07</h6>
+            </div>
+          </container>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="reviews-section section-padding section-bg" id="section_4">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-lg-12 col-12 text-center mb-4 pb-lg-2">
+              <em class="text-black">Testimonios de Clientes</em>
+
+              <h2 class="text-black">Reseñas</h2>
+            </div>
+
+            <div class="timeline">
+              <div id="review1" class="timeline-container timeline-container-left">
+                <div class="timeline-content">
+                  <div class="reviews-block">
+                    <div id="reviews" class="reviews-block-image-wrap d-flex align-items-center">
+                      <img
+                        src="./img/home/reviews/tatiana.jpg"
+                        class="reviews-block-image img-fluid"
+                        alt=""
+                      />
+
+                      <div class="">
+                        <h6 class="text-black mb-1"></h6>
+                        <em class="text-black mt-3"> Tatiana Rodriguez Barrera</em>
+                      </div>
+                    </div>
+
+                    <div class="reviews-block-info mt-2">
+                      <p>
+                        Stephane es una buena  profesional y persona de confianza , con un trato cálido y agradable  si de fotografiar los mejores momentos se trata ,estoy encantada con su trabajo ya que fue la encargada de capturar cada momento especial de mi boda , un placer , sin duda volvería a contratar sus servicios , la recomiendo totalmente.👌🏼🥰…
+                      </p>
+
+                      <div class="d-flex border-top pt-3 mt-4">
+                        <strong class="text-black">5.0 <small class="ms-2">Estrellas</small></strong>
+
+                        <div class="reviews-group ms-auto">
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="review2" class="timeline-container timeline-container-right">
+                <div class="timeline-content">
+                  <div class="reviews-block">
+                    <div id="reviews" class="reviews-block-image-wrap d-flex align-items-center">
+                      <img
+                        src="./img/home/reviews/adriana.JPG"
+                        class="reviews-block-image img-fluid"
+                        alt=""
+                      />
+
+                      <div class="">
+                        <h6 class="text-black mb-0"></h6>
+                        <em class="text-black mt-3"> Adriana Cristina Verdezoto</em>
+                      </div>
+                    </div>
+
+                    <div class="reviews-block-info mt-2">
+                      <p>
+                        Me encantó el trabajo de Stephane, hizo parte de las fotos de mi boda y en exclusiva el momento de vestirme en casa. El trato inmejorable, lo hizo todo muy fácil, y las fotos me enamoraron 😍…
+                      </p>
+
+                      <div class="d-flex border-top pt-3 mt-4">
+                        <strong class="text-black">5.0 <small class="ms-2">Estrellas</small></strong>
+
+                        <div class="reviews-group ms-auto">
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div id="review3" class="timeline-container timeline-container-left" >
+                <div class="timeline-content">
+                  <div class="reviews-block">
+                    <div id="reviews" class="reviews-block-image-wrap d-flex align-items-center">
+                      <img
+                        src="./img/home/reviews/fatima.png"
+                        class="reviews-block-image img-fluid"
+                        alt=""
+                      />
+
+                      <div class="">
+                        <h6 class="text-black mb-0"></h6>
+                        <em class="text-black mt-3"> Fatima Chal</em>
+                      </div>
+                    </div>
+
+                    <div class="reviews-block-info mt-2">
+                      <p>
+                        Excelente fotógrafa, 100% recomendada sobre todo para esas personas que no son muy fotogénicas porque te sacan lo mejor de ti.
+Si buscas un fotógrafo de confíanza y con esa habilidad de sacarte fotos con calidad y no solo cantidad, aquí te recomiendo una.
+                      </p>
+
+                      <div class="d-flex border-top pt-3 mt-4">
+                        <strong class="text-black">5.0 <small class="ms-2">Estrellas</small></strong>
+
+                        <div class="reviews-group ms-auto">
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                          <img src="./img/icons/star.png" width="30" height="auto" alt="" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer id="Footer" class="site-footer">
+        <div class="containerfooter">
+        <div class="row">
+          <div class="col-lg-2 col-12 me-auto">
+            <em class="text-grey d-block mb-4">Donde puedes encontrarme:</em>
+            <ul class="social-icon mt-4 pb-4">
+              <li class="social-icon-item">
+                <a
+                  href="https://www.facebook.com/stephane.cordero.737"
+                  target="_new"
+                  class="social-icon-link"
+                >
+                  <img
+                    src="./img/icons/social/logotipo-de-facebook.png"
+                    height="auto"
+                    width="20px"
+                    alt="Logotipo de Facebook"
+                  />
+                </a>
+              </li>
+
+              <li class="social-icon-item">
+                <a
+                  href="https://www.instagram.com/stephanefotografias/"
+                  target="_new"
+                  class="social-icon-link"
+                >
+                  <img
+                    src="./img/icons/social/logotipo-de-instagram.png"
+                    height="auto"
+                    width="20px"
+                    alt="Logotipo de instagram"
+                  />
+                </a>
+              </li>
+
+              <li class="social-icon-item">
+                <a
+                  href="https://api.whatsapp.com/message/AGZGX3VC6M6SN1?autoload=1&app_absent=0"
+                  target="_new"
+                  class="social-icon-link"
+                >
+                  <img
+                    src="./img/icons/social/logotipo-de-whatsapp.png"
+                    height="auto"
+                    width="20px"
+                    alt="Logotipo de whatsapp"
+                  />
+                </a>
+              </li>
+            </ul>
+
+            <strong class="text-grey"> Bilbao, 48014. España </strong>
+          </div>
+
+          <div class="col-lg-2 me-5 col-12 mt-4 mb-3 mt-lg-0 mb-lg-0">
+            <em class="text-grey d-block mb-4">Contacto:</em>
+
+            <p class="d-flex mb-1">
+              <strong class="me-2">Telefono:</strong>
+              <a href="tel: +34 674-580-318" class="site-footer-link"> (34) 674 580 318 </a>
+            </p>
+
+            <p class="d-flex">
+              <strong class="me-2">Email:</strong>
+
+              <a href="mailto:info@yourgmail.com" class="site-footer-link"> stephane@gmail.com </a>
+            </p>
+          </div>
+
+          <div class="col-lg-3 col-12 me-2">
+            <em class="text-grey d-block mb-4">Horarios de atencion:</em>
+
+            <ul class="opening-hours-list">
+              <li class="d-flex">
+                Lunes - Viernes
+
+
+                <strong style="padding-left: 26px">9:00 - 20:00</strong>
+              </li>
+
+              <li class="d-flex">
+                Sabado
+
+
+                <strong style="padding-left: 80px">11:00 - 16:30</strong>
+              </li>
+
+              <li class="d-flex">
+                Domingo
+
+
+                <strong style="padding-left: 70px">Cerrado</strong>
+              </li>
+            </ul>
+          </div>
+
+          <div id="footergallery" class="col-lg-4 col-12">
+            <div class="pswp-gallery pswp-gallery--single-column" id="my-gallery2">
+              <a
+                href="https://www.instagram.com/stephanefotografias/"
+                target="_blank"
+              >
+                <img src="./img/clientes/BodaAdriana&Julio_22072023/2.JPG" alt="" />
+              </a>
+
+
+              <a
+                href="https://www.instagram.com/stephanefotografias/"
+                target="_blank"
+              >
+                <img src="./img/clientes/BodaG&Tatiana/28.jpg" alt="" />
+              </a>
+             
+
+              <a
+                href="https://www.instagram.com/stephanefotografias/"
+                target="_blank"
+              >
+                <img src="./img/clientes/BodaK&Samira/19.JPG" alt="" />
+              </a>
+
+              <a
+                href="https://www.instagram.com/stephanefotografias/"
+                target="_blank"
+              >
+                <img src="./img/clientes/BodaG&Tatiana/11.jpg" alt="" />
+              </a>
+              
+
+              <a
+                href="https://www.instagram.com/stephanefotografias/"
+               
+                target="_blank"
+              >
+                <img src="./img/clientes/BodaAdriana&Julio_22072023/18.JPG" alt="" />
+              </a>
+              
+
+              <a
+                href="https://www.instagram.com/stephanefotografias/"
+                target="_blank"
+              >
+                <img src="./img/clientes/BodaAdriana&Julio_22072023/9.JPG" alt="" />
+              </a>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-12 mt-4">
+            <p class="copyright-text mb-0">
+              Copyright © StephaneFotografias - Design:
+              <a rel="sponsored" href="https://www.instagram.com/arnoldmelet/" target="_blank"
+                >Arnold Melet</a
+              >
+            </p>
+          </div>
+        </div>
+      </footer>
+    </main>
+
+
+    <script type="module">
+      import PhotoSwipeLightbox from "../node_modules/photoswipe/dist/photoswipe-lightbox.esm.js";
+      const lightbox = new PhotoSwipeLightbox({
+        gallery: "#my-gallery",
+        children: "a",
+        pswpModule: () => import("../node_modules/photoswipe/dist/photoswipe.esm.js"),
+      });
+      lightbox.init();
+    </script>
+  </body>
+</html>
