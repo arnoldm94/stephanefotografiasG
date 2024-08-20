@@ -241,6 +241,7 @@ form button {
   position: absolute;
   margin-top: 1200px;
   padding: 3%;
+  padding-bottom: 0px;
 }
 .site-footer {
   /* background-color: var(--primary-color); */
@@ -260,6 +261,7 @@ form button {
   /*  color: rgba(255, 255, 255, 0.75); */
   color: grey;
   font-size: var(--btn-font-size);
+  text-decoration: none;
 }
 
 .site-footer-link {
@@ -267,6 +269,7 @@ form button {
   color: grey;
   font-size: var(--btn-font-size);
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .site-footer-link:hover {

@@ -75,6 +75,7 @@ body {
 #Footer {
   position: absolute;
   padding: 3%;
+  padding-bottom: 0px;
 }
 .site-footer {
   /* background-color: var(--primary-color); */

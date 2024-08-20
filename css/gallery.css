@@ -132,7 +132,10 @@ img {
   flex-direction: column;
   position: relative;
 }
-
+.servicesbox:hover {
+  transition: all 1s ease-in-out;
+  filter: opacity(0.5);
+}
 /*---------------------------------------
   SITE FOOTER              
 -----------------------------------------*/
@@ -158,6 +161,7 @@ img {
   /*  color: rgba(255, 255, 255, 0.75); */
   color: grey;
   font-size: var(--btn-font-size);
+  text-decoration: none;
 }
 
 .site-footer-link {
@@ -165,6 +169,7 @@ img {
   color: grey;
   font-size: var(--btn-font-size);
   transition: all 0.3s;
+  text-decoration: none;
 }
 
 .site-footer-link:hover {
@@ -243,6 +248,7 @@ img {
 #Footer {
   position: absolute;
   padding: 3%;
+  padding-bottom: 0px;
 }
 .site-footer {
   /* background-color: var(--primary-color); */
